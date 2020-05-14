@@ -16,7 +16,7 @@
 				
 				if ( have_posts() ):
 					while ( have_posts() ) : the_post(); 
-						get_template_part( 'templates/classify-blog-loop' );
+						get_template_part( 'templates/blog-loop' );
 					endwhile;
 				?>
 				<div class="pagination-nav">
@@ -32,7 +32,7 @@
 				</div><!--pagination-nav-->
 				<?php 
 				else :
-					$classifyNotFound =  esc_html__( 'Sorry Nothing Found', 'classify' );
+					$classifyNotFound =  esc_html__( 'Sorry Nothing Found', );
 					echo $classifyNotFound;
 				endif;
 				wp_reset_postdata(); 
