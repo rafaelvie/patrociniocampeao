@@ -1,11 +1,4 @@
 <?php
-/**
- * The Template for displaying single country.
- *
- * @package WordPress
- * @subpackage classiera
- * @since classiera 2.0.13
- */
 get_header(); ?>
 <?php
 	global $redux_demo; 
