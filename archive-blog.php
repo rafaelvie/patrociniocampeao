@@ -1,11 +1,5 @@
 <?php
-/**
- * The template for displaying archives of blog categories
- *
- * @package WordPress
- * @subpackage classify
- * @since classify 4.0
- */
+
  ?>
 <?php get_header();?>
 <?php 	
