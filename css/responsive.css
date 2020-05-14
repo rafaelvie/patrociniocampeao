@@ -1,0 +1,202 @@
+@media screen and (min-width: 320px) and (max-width: 360px){
+    /*home page*/
+    .social{
+        margin: 0 0 15px 0;
+    }
+    .links{
+        text-align: left !important;
+        margin: 0 0 15px 0;
+    }
+    .navbar-default .navbar-toggle{
+        position: relative;
+    }
+	#searchBar form.form-inline{
+		flex-wrap: wrap;
+	}
+    #searchBar form .keyword{
+        width: 100% !important;
+    }
+    #searchBar form .label{
+        width: 100% !important;
+    }
+    #searchBar form .label .select{
+        width: 100% !important;
+    }
+    .label{
+        padding: 0 !important;
+        margin-bottom: 5px;
+    }
+    #searchBar form .location-tip{
+        margin: 15px 0 15px 0;
+    }
+    #searchBar form .search-btn{
+        width: 100% !important;
+    }
+
+    /*detail-page*/     
+    .carousel-indicators{
+        top:70% !important;
+    }
+	#detail .adv-slider{
+		 height: 250px;
+	}
+    #detail .author-detail .author-name{
+        margin-bottom: 15px;
+    }
+    #form .input-pad{
+        padding: 0;
+    }
+    /*edit profile*/
+    .author-avatar{
+        top: 0;
+    }
+    .author-name{
+        margin: 140px 0 10px 0;
+    }
+	.classify-buy-sel{
+		display:none;
+	}
+	.item-list .classify_adv_box .classify_adv_hover i{
+		width:20px;
+		height:20px;
+		padding:0;
+		line-height:20px;
+		font-size:14px;
+		top:5px;
+		right:5px;
+	}
+	.item-list .classify_adv_box .classify_adv_hover img.classify__imgicon{
+		width:30px !important;
+		height:30px !important;
+		padding:0;
+		top:5px;
+		right:5px;
+	}
+	#searchBar .form-group{
+		margin-bottom:10px !important;
+	}
+	.classify_single_map .leaflet-popup-content{width:270px !important;}
+	.classify_single_map .classify_map_box_home .classify_adv_box_img{width:270px !important;}
+	.pricing-plan .price-plan{
+		margin-bottom:50px;
+	}
+	.classify_adv_box img{
+		width: 100%;
+		height: 100%;
+		position:relative;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 630px){
+    .navbar-default .navbar-toggle{
+        position: relative;
+    }
+    .social{
+        margin: 0 0 15px 0;
+    }
+    .links{
+        text-align: left !important;
+        margin: 0 0 15px 0;
+    }
+    .carousel{
+        height: 300px;
+    }
+    #detail .author-detail .author-name{
+        margin-bottom: 15px;
+    }
+    #form .input-pad{
+        padding: 0;
+    }
+	.classify-buy-sel{
+		display:none;
+	}
+	.item-list .classify_adv_box .classify_adv_hover i{
+		width:20px;
+		height:20px;
+		padding:0;
+		line-height:20px;
+		font-size:14px;
+		top:5px;
+		right:5px;
+	}
+	.item-list .classify_adv_box .classify_adv_hover img.classify__imgicon{
+		width:30px !important;
+		height:30px !important;
+		padding:0;
+		top:5px;
+		right:5px;
+	}
+	#searchBar form.form-inline{
+		flex-wrap: wrap;
+	}
+	#searchBar .form-group{
+		margin-bottom:10px !important;
+	}
+	.classify_single_map .leaflet-popup-content{width:270px !important;}
+	.classify_single_map .classify_map_box_home .classify_adv_box_img{width:270px !important;}
+	.pricing-plan .price-plan{
+		margin-bottom:50px;
+	}
+	.classify_adv_box img{
+		width: 100%;
+		height: 100%;
+		position:relative;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 760px){
+    .navbar-default .navbar-toggle{
+        position: relative;
+    }
+    .responsive-width-top{
+        width: 50%;
+        float: left;
+    }
+    .carousel{
+        height: 400px;
+    }
+    #detail .author-detail .author-name{
+        margin-bottom: 15px;
+    }
+    #form .input-pad{
+        padding: 0;
+    }
+	#searchBar form.form-inline{
+		flex-wrap: wrap;
+	}
+	#searchBar .form-group{
+		margin-bottom:10px !important;
+	}
+	.pricing-plan .price-plan{
+		margin-bottom:50px;
+	}
+	.col-res-centered{
+		float:none !important;
+		margin:0 auto;
+	}
+	.classify_adv_box img{
+		width: 100%;
+		height: 100%;
+		position:relative;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 990px){
+	.pricing-plan .price-plan{
+		margin-bottom:50px;
+	}
+	.col-res-centered{
+		float:none !important;
+		margin:0 auto;
+	}
+	.classify_adv_box img{
+		width: 100%;
+		height: 100%;
+		position:relative;
+	}
+	#searchBar form.form-inline{
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#searchBar form .form-group{
+		width:49% !important;
+		
+	}
+}
