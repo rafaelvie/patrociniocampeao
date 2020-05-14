@@ -5,7 +5,7 @@ get_header();
 	<div class="container">
 		<div class="row col-md-12">
 			<div class="page-heading">
-				<h1><?php _e( '404 ERROR', 'classify' ); ?></h1>
+				<h1><?php _e( '404 ERROR' ); ?></h1>
 			</div>
 		</div>
 	</div>
