@@ -1,14 +1,4 @@
 <?php
-/**
- * Template name: Profile Page
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage classify
- * @since classify
- */
-
 get_header(); ?>
 <?php
 global $user_ID;
@@ -36,7 +26,7 @@ if(isset($_POST['submitted'])) {
 	
 		//Check to make sure that the name field is not empty
 		if(trim($_POST['contactName']) === '') {
-			$errorMessage = esc_html__('Please type your name...!', 'classify');
+			$errorMessage = esc_html__('Please type your name...!');
 			$hasError = true;
 		}else{
 			$name = trim($_POST['contactName']);
@@ -44,7 +34,7 @@ if(isset($_POST['submitted'])) {
 
 		//Check to make sure that the subject field is not empty
 		if(trim($_POST['subject']) === '') {
-			$errorMessage = esc_html__('Please give subject..!', 'classify');
+			$errorMessage = esc_html__('Please give subject..!');
 			$hasError = true;
 		}else{
 			$subject = trim($_POST['subject']);
@@ -55,7 +45,7 @@ if(isset($_POST['submitted'])) {
 			$errorMessage = esc_html__('Email is required..!', 'classify');
 			$hasError = true;
 		} else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
-			$errorMessage = esc_html__('Email is required..!', 'classify');
+			$errorMessage = esc_html__('Email is required..!');
 			$hasError = true;
 		} else {
 			$email = trim($_POST['email']);
@@ -63,7 +53,7 @@ if(isset($_POST['submitted'])) {
 			
 		//Check to make sure comments were entered	
 		if(trim($_POST['comments']) === '') {
-			$errorMessage = esc_html__('Please type some word in message area..!', 'classify');
+			$errorMessage = esc_html__('Please type some word in message area..!');
 			$hasError = true;
 		} else {
 			if(function_exists('stripslashes')) {
@@ -75,7 +65,7 @@ if(isset($_POST['submitted'])) {
 
 		//Check to make sure that the human test field is not empty
 		if(trim($_POST['humanTest']) != '8') {
-			$errorMessage = esc_html__('Not Human', 'classify');	
+			$errorMessage = esc_html__('Not Human');	
 			$hasError = true;
 		}			
 		//If there is no error, send the email
@@ -141,7 +131,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorPhone):?>
 										<li>
 											<i class="fa fa-phone"></i>
-											<?php esc_html_e("Phone", 'classify') ?>: <?php echo $authorPhone; ?>
+											<?php esc_html_e("Phone") ?>: <?php echo $authorPhone; ?>
 										</li>
 										<?php endif;?>
 										<!--User Phone-->
@@ -149,7 +139,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorMobile):?>
 										<li>
 											<i class="fa fa-mobile"></i>
-											<?php esc_html_e("Mobile", 'classify') ?>: <?php echo $authorMobile; ?>
+											<?php esc_html_e("Mobile") ?>: <?php echo $authorMobile; ?>
 										</li>
 										<?php endif;?>
 										<!--User Mobile-->
@@ -157,7 +147,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorCountry):?>
 										<li>
 											<i class="fa fa-map-marker"></i>
-											<?php esc_html_e("Country", 'classify') ?>: <?php echo $authorCountry; ?>
+											<?php esc_html_e("Country") ?>: <?php echo $authorCountry; ?>
 										</li>
 										<?php endif;?>
 										<!--User Country-->
@@ -165,7 +155,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorState):?>
 										<li>
 											<i class="fa fa-map-marker"></i>
-											<?php esc_html_e("State", 'classify') ?>: <?php echo $authorState; ?>
+											<?php esc_html_e("State") ?>: <?php echo $authorState; ?>
 										</li>
 										<?php endif;?>
 										<!--User State-->
@@ -173,7 +163,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorCity):?>
 										<li>
 											<i class="fa fa-map-marker"></i>
-											<?php esc_html_e("City", 'classify') ?>: <?php echo $authorCity; ?>
+											<?php esc_html_e("City") ?>: <?php echo $authorCity; ?>
 										</li>
 										<?php endif;?>
 										<!--User City-->
@@ -181,7 +171,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorPostcode):?>
 										<li>
 											<i class="fa fa-map-marker"></i>
-											<?php esc_html_e("Post Code", 'classify') ?>: <?php echo $authorPostcode; ?>
+											<?php esc_html_e("Post Code") ?>: <?php echo $authorPostcode; ?>
 										</li>
 										<?php endif;?>
 										<!--User Post Code-->
@@ -189,7 +179,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorAddress):?>
 										<li>
 											<i class="fa fa-map-marker"></i>
-											<?php esc_html_e("Address", 'classify') ?>: <?php echo $authorAddress; ?>
+											<?php esc_html_e("Address") ?>: <?php echo $authorAddress; ?>
 										</li>
 										<?php endif;?>
 										<!--User Address-->
@@ -197,7 +187,7 @@ if(empty($classifyAuthorIMG)){
 										<!--User Website-->
 										<li>
 											<i class="fa fa-globe"></i>
-											<?php esc_html_e("Website", 'classify') ?>: <a href="<?php echo $authorWebsite; ?>" class="col">
+											<?php esc_html_e("Website") ?>: <a href="<?php echo $authorWebsite; ?>" class="col">
 												<?php echo $authorWebsite; ?>
 											</a>
 										</li>
@@ -208,7 +198,7 @@ if(empty($classifyAuthorIMG)){
 										<?php if($authorEmail):?>
 										<li>
 											<i class="fa fa-envelope"></i>
-											<?php esc_html_e("Email", 'classify') ?>: 
+											<?php esc_html_e("Email") ?>: 
 											<a href="mailto:<?php echo $authorEmail; ?>" class="col">
 												<?php echo $authorEmail; ?>
 											</a>
@@ -217,7 +207,7 @@ if(empty($classifyAuthorIMG)){
 										<!--User Email-->
 									</ul>
 									<!--Social DETAILS-->
-									<h4 class="inner-heading"><?php esc_html_e("SOCIAL DETAILS", 'classify') ?></h4>
+									<h4 class="inner-heading"><?php esc_html_e("SOCIAL DETAILS") ?></h4>
 									<div class="classify_social_links">
 										<?php 
 										$authorFacebook = get_the_author_meta('facebook', $user_ID);
@@ -311,7 +301,7 @@ if(empty($classifyAuthorIMG)){
 							</div>
 						</div><!--row-->
 						<!--Description-->
-						<h4 class="inner-heading"><?php esc_html_e("About", 'classify') ?></h4>
+						<h4 class="inner-heading"><?php esc_html_e("About") ?></h4>
 						<?php $authorDesc = get_the_author_meta('description', $user_ID);?>
 						<p><?php echo $authorDesc; ?></p>
 						<!--Description-->
@@ -319,7 +309,7 @@ if(empty($classifyAuthorIMG)){
 					<div class="author-related-ads">
 						<section id="advertisement">
 							<div class="container" data-width-offset="10">
-								<h4 class="inner-heading"><?php esc_html_e("Ads", 'classify') ?></h4>
+								<h4 class="inner-heading"><?php esc_html_e("Ads") ?></h4>
 								<div class="row">
 									<div class="col-md-12 content content1">
 										<div class="clearfix">
@@ -361,24 +351,24 @@ if(empty($classifyAuthorIMG)){
 					</div>
 					<!--Classify Google Ads-->
 					<div class="author-contact">
-						<h4 class="inner-heading"><?php esc_html_e("TO AUTHOR", 'classify') ?></h4>
+						<h4 class="inner-heading"><?php esc_html_e("TO AUTHOR") ?></h4>
 						<div class="row">
 							<form method="post" data-toggle="validator">
 								<!--Name-->
 								<div class="col-sm-6 form-group">
-									<input class="form-control" type="text" name="name" placeholder="<?php esc_html_e("Full name", 'classify') ?>" required data-error="<?php esc_html_e("Please type your name.", 'classify') ?>">
+									<input class="form-control" type="text" name="name" placeholder="<?php esc_html_e("Full name") ?>" required data-error="<?php esc_html_e("Please type your name.", 'classify') ?>">
 									<div class="help-block with-errors"></div>
 								</div>
 								<!--Name-->
 								<!--Email-->
 								<div class="col-sm-6 form-group">
-									<input class="form-control" type="email" name="email" placeholder="<?php esc_html_e("Email address", 'classify') ?>" required data-error="<?php esc_html_e("Please type your email", 'classify') ?>">
+									<input class="form-control" type="email" name="email" placeholder="<?php esc_html_e("Email address") ?>" required data-error="<?php esc_html_e("Please type your email", 'classify') ?>">
 									<div class="help-block with-errors"></div>
 								</div>
 								<!--Email-->
 								<!--Subject-->
 								<div class="col-sm-12 form-group">
-									<input class="form-control" type="text" name="subject" placeholder="<?php esc_html_e("Subject", 'classify') ?>" required data-error="<?php esc_html_e("please type subject", 'classify') ?>">
+									<input class="form-control" type="text" name="subject" placeholder="<?php esc_html_e("Subject") ?>" required data-error="<?php esc_html_e("please type subject", 'classify') ?>">
 									<div class="help-block with-errors"></div>
 								</div>
 								<!--Subject-->
@@ -408,7 +398,7 @@ if(empty($classifyAuthorIMG)){
 								<!--Submit Button-->
 								<div class="col-sm-12">
 									<input type="hidden" name="humanAnswer" id="humanAnswer" value="<?php echo $classifyNumberAnswer; ?>" />
-									<input type="submit" name="send_message" value="<?php esc_html_e("Send Message", 'classify') ?>">
+									<input type="submit" name="send_message" value="<?php esc_html_e("Send Message") ?>">
 								</div>
 								<!--Submit Button-->
 							</form>
