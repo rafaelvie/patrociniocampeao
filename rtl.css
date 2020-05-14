@@ -1,0 +1,317 @@
+/*
+  Theme Name: classify
+  Theme URL: http://www.joinwebs.com/
+  Author: JoinWebs
+  Author URI: http://www.joinwebs.com/
+  Description: Originality - A Template For Food Resturants and Hotles using Responsive HTML5 css3   bootstrap3 Template
+  Version: 1.0.0
+*/
+/*=========================================================================
+// Table of Contents
+===========================================================================
+Home page css
+1-Header
+2-Search Bar
+3-Premium Advertisement
+4-Categories
+5-Classify Advertisement
+6-Footer
+7-back to top
+8-Home page with map
+9-Detail Page
+10-Edit Page
+11-FAQ
+12-Full width Page
+13-Notification
+14-User Form
+15-pricing plan
+16-user profile
+17-Subcategory
+
+===========================================================================*/
+
+/*=========================================================================
+// Global css
+===========================================================================*/
+.left-padding-control{
+    padding: 0 0 0 15px;
+}
+.right-padding-control{
+    padding: 0 15px 0 0;
+}
+.owl-prev{
+    float: left;
+}
+/*=========================================================================
+// Header
+===========================================================================*/
+@media screen and (min-width: 769px){
+    #header header .menu-bar .navbar-nav > li.dropdown .dropdown-menu li.dropdown:after{
+        content: '\f0d9';
+        right: auto;
+        left: 15px;
+    }
+}
+.offcnavas{
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+}
+.offcnvas__close{
+    float: left;
+}
+.offcnavas ul.nav li.dropdown a.dropdown-toggle{
+    right: auto !important;
+    left: 15px !important;
+}
+.mobile-button{
+    left:  auto;
+    right: 0;
+}
+/*=========================================================================
+// search bar
+===========================================================================*/
+
+#searchBar form .form-group:nth-of-type(1){
+    margin-right: 0;
+    margin-left: 5px;
+}
+#searchBar form .form-group:nth-of-type(2),
+#searchBar form .form-group:nth-of-type(3){
+    margin-right: 0;
+    margin-left: 5px;
+}
+#searchBar form .form-group:nth-of-type(4){
+    margin-right: 0;
+    margin-left: 5px;
+}
+#searchBar form .form-group:nth-of-type(5){
+    margin-right: 0;
+    margin-left: 5px;
+}
+#searchBar form .form-group:nth-of-type(6){
+    margin-right: 0;
+}
+/*=========================================================================
+    // callout
+===========================================================================*/
+.callout-box .callout-content{
+    margin-right: 0;
+    margin-left: 15px;
+}
+/*=========================================================================
+    location
+===========================================================================*/
+.location .locations a i{
+    margin-right: 0;
+    margin-left: 10px;
+}
+/*=========================================================================
+    // Premium Advertisement
+===========================================================================*/
+#premium .item .item-title a{
+    margin: 0 20px 0 0;
+}
+#premium .item .item-hover{
+    left: auto;
+    right: 0;
+}
+/*carousel*/
+.owl-nav{
+    left: auto;
+    right: -6px;
+}
+.owl-nav .owl-prev{
+    margin-right: 5px;
+}
+/*=========================================================================
+// Classify Advertisement
+===========================================================================*/
+.classify_adv_box .classify_adv_box_img .classify_adv_box_title a{
+    margin: 0 20px 0 0;
+}
+.classify_adv_box .classify_adv_hover{
+    left: auto;
+    right: 0;
+}
+.classify_adv_box .classify_adv_hover i{
+    right: auto;
+    left: 15px;
+}
+.classify-buy-sel{
+	left:auto;
+	right:20px;
+}
+#premium .classify-buy-sel{
+	left:20px;
+	right:auto;
+}
+.inner-heading{
+    background-position: right bottom !important;
+}
+.adp{
+	padding:0 !important;
+}
+/*=========================================================================
+// advertisement list view
+===========================================================================*/
+.content .item-list .classify_adv_box .classify_adv_box_img{
+    margin-right: 0;
+    margin-left: 15px;
+}
+.content .item-list .classify_adv_box .classify_adv_box_content .classify_adv_box_title p > span > a{
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.classify_adv_box_footer .tags span i{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.classify_adv_box_footer .tags a{
+    padding-right: 0;
+    padding-left: 5px;
+}
+/*=========================================================================
+// Footer
+===========================================================================*/
+#footer footer .widget .widget__premium li a.item-hover{
+    left: auto;
+    right: 0;
+}
+/*=========================================================================
+// back to top
+===========================================================================*/
+.back-to-top {
+    right: auto;
+    left: 40px;
+}
+/*=========================================================================
+// home page with map
+===========================================================================*/
+
+/*=========================================================================
+// Detail Page
+===========================================================================*/
+#detail .author-detail-right .author-info i{
+    margin: 0 0 0 10px;
+}
+#detail .adv-detail .tags i{
+    margin: 0 0 0 15px;
+}
+#detail .adv-detail .tags span{
+    margin: 0 0 0 15px;
+}
+#detail .adv-detail .tags a{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.input-pad{
+    padding: 0 0 0 10px;
+}
+
+#form input,
+#form select{
+    padding: 0 45px 0 0 !important;
+}
+.form-control-feedback{
+    left: auto;
+    right: 20px;
+	top:6px;
+}
+.user-form-set form .form-control-feedback{
+    right: 8px !important;
+}
+/*sidebar*/
+.widget .tags a{
+    margin: 0 0 10px 5px;
+}
+.sidebar .side-widget .sidebar-account-overview{
+    padding: 0 30px 0 0;
+}
+.widget .widget__content .widget__content_subcat ul li a i{
+    margin-right: 0;
+    margin-left: 15px;
+}
+.widget .widget__content .widget__content_subcat ul li a span{
+    float: left;
+    padding-right: 0;
+    padding-left: 15px;
+}
+/*=========================================================================
+// edit Page
+===========================================================================*/
+.ad-type{
+    margin: 0 0 10px 15px;
+}
+label{
+    margin: 0 0 0 10px !important;
+}
+input[type="radio"]{
+    margin: 0 0 0 10px !important;
+}
+/*=========================================================================
+// FAQ
+===========================================================================*/
+.question .accordion .accordion-tab{
+    padding: 0 25px 0 0;
+}
+.question .accordion .accordion-tab i{
+    margin: 0 0 0 20px;
+}
+/*=========================================================================
+// Full width Page
+===========================================================================*/
+.page-content blockquote{
+    border-left:0;
+    border-right:5px solid #a0ce4e;
+}
+.page-content ul li p{
+    float: right;
+}
+.page-content ul li i{
+    float: right;
+    margin: 4px 0 0 18px;
+}
+/*=========================================================================
+// Notification
+===========================================================================*/
+.notification .notification-box .note-box{
+    padding: 8px 18px 0 0;
+}
+.notification .notification-box .note-box i{
+    margin: 0 0 0 10px;
+}
+/*listing*/
+.listing ul li i{
+    margin: 0 0 0 5px;
+}
+/*=========================================================================
+// User Form
+===========================================================================*/
+#formSubmit .user-form .user-form-set .form-input{
+    text-align: right;
+}
+#formSubmit .user-form .user-form-set .form-input input{
+    padding: 0 50px 0 0;
+}
+#formSubmit .user-form .user-form-set .form-input span{
+    margin: 0 0 0 15px;
+}
+/*=========================================================================
+// user-profile
+===========================================================================*/
+.author-profile-details ul li i{
+    margin: 0 0 0 10px;
+}
+
+/*user profile second page*/
+.profile-data .author-related-ads .ad-arrow span a i:nth-of-type(1){
+    margin: 0 0 0 5px;
+}
+.author-contact input{
+    padding: 0 20px 0 0;
+}
+.author-contact textarea{
+    padding: 0 20px 0 0;
+}
