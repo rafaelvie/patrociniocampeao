@@ -1,14 +1,4 @@
 <?php
-/**
- * The template for displaying Category pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage classify
- * @since classify 1.0
- */
-
 get_header();?>
 <?php
 	//Classify theme options//
