@@ -1,12 +1,4 @@
 <?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package WordPress
- * @subpackage classify
- * @since classify 1.0
- */
-
 get_header(); 
 ?>
 <section id="page-head">
