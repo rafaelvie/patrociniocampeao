@@ -1,5 +1,4 @@
 <?php
-
 get_header();?>
 <?php 
 	$page = get_post($post->ID);
