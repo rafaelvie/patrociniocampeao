@@ -1,22 +1,4 @@
 <?php
-/**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * If you'd like to further customize these archive views, you may create a
- * new template file for each specific one. For example, Twenty Thirteen
- * already has tag.php for Tag archives, category.php for Category archives,
- * and author.php for Author archives.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage classify
- * @since classify 1.0
- */
-
 get_header();
 ?>
 <section id="page-head">
@@ -33,7 +15,7 @@ get_header();
 					}
 						if ( is_day() ) :
 
-									printf( __( 'Daily Archives: %s', 'classify' ), get_the_date() );
+									printf( __( 'Daily Archives: %s' ), get_the_date() );
 									$archive_year  = get_the_date('Y'); 
 									$archive_month = get_the_date('m'); 
 									$archive_day   = get_the_date('d');
@@ -43,7 +25,7 @@ get_header();
 
 						elseif ( is_month() ) :
 
-									printf( __( 'Monthly Archives: %s', 'classify' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'classify' ) ) );
+									printf( __( 'Monthly Archives: %s' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'classify' ) ) );
 									$archive_year  = get_the_date('Y'); 
 									$archive_month = get_the_date('m');
 									global $args; $args = array('paged' => $paged, 'posts_per_page' => 9, 'year' => $archive_year, 'monthnum' => $archive_month, 'order' => 'DESC', 'post_type' => 'post');
@@ -52,7 +34,7 @@ get_header();
 
 						elseif ( is_year() ) :
 
-									printf( __( 'Yearly Archives: %s', 'classify' ), get_the_date( _x( 'Y', 'yearly archives date format', 'classify' ) ) );
+									printf( __( 'Yearly Archives: %s' ), get_the_date( _x( 'Y', 'yearly archives date format', 'classify' ) ) );
 									$archive_year  = get_the_date('Y'); 
 									global $args; $args = array('paged' => $paged, 'posts_per_page' => 9, 'year' => $archive_year, 'order' => 'DESC');
 									global $args_popular; $args_popular = array('paged' => $paged, 'posts_per_page' => 9, 'year' => $archive_year, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC');
@@ -60,7 +42,7 @@ get_header();
 
 						elseif ( is_tag() ) :
 								
-									single_tag_title( __( 'Tag', 'classify' ) );
+									single_tag_title( __( 'Tag' ) );
 									global $wp_query;
 									$tag = $wp_query->get_queried_object();
 									$current_tag = $tag->term_id;
@@ -71,7 +53,7 @@ get_header();
 
 						else :
 
-									_e( 'Archives', 'classify' );
+									_e( 'Archives' );
 
 						endif;
 					?>
