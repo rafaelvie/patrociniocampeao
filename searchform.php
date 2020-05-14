@@ -1,11 +1,4 @@
 <?php
-/**
- * The template for displaying search form
- *
- * @package WordPress
- * @subpackage FoundationPress
- * @since FoundationPress 1.0
- */
 ?>
 <!-- search -->	
 <div class="classify__search_form">
